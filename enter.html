@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=display-width, initial-scale=1 ">
+        <title>ABC</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <style>
+    li,button{
+        border-radius: 10px;
+        margin:20px;
+        padding:auto;
+    }
+    ul{
+        display:block;
+        float:center;
+    }
+    .box{
+        display:flex;
+        flex-direction: row;
+        list-style: none;
+        align-content: space-between;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin:auto;
+    }
+    form{
+        float:right;
+        padding:20px;
+        margin: auto;
+        background-color: rgb(39, 175, 168);
+    }
+    .cen{
+        text-align: center;
+        color:rgb(42, 10, 131);
+        padding:20ox;
+        margin:auto;
+    }
+    .role{
+        padding: 10px;
+        margin:auto;
+        background-color: rgb(42, 10, 131);
+        color:whitesmoke;
+        border-radius: 2px;
+    }
+    .skill{
+        padding:10px;
+        margin:auto;
+        background-color:white;
+        color:black;
+        border-radius:2px;
+    }
+    input{
+        margin-top: 10px;
+    }
+    #buon{
+        display:flex;
+        justify-content: space-around;
+        position: relative;
+        left:150%;
+        
+    }
+    #buon button{
+        padding:10px;
+        margin:auto;
+    }
+    #Submit{
+        padding: 10px;
+        margin:auto;
+        border-radius:2px;
+        color:whitesmoke;
+        background-color: rgb(42, 10, 131);
+        text-align: center;
+        position:relative;
+        left:50%;
+    }
+    #Benefits div{
+        padding:20px;
+        margin:auto;
+        box-shadow: 10px 10px rgba(95, 93, 93, 0.534);
+    }
+    img{
+        height:150px;
+        width:min(20%,400px);
+        position:absolute;
+        left:40%;
+    }
+    @media only screen and (max-width:800px){
+          img{
+            position:absolute;
+            left:80%;
+            object-fit: contain;
+          }
+          .box{
+            flex-direction: column;
+          }
+          .skill,.role{
+            margin:15px;
+          }
+    }
+    .faq{
+        list-style: none;
+    }
+    .faq li{
+        background-color: rgb(94, 177, 245);
+        color:rgb(42, 10, 131);
+    }
+    .faqhead{
+        padding:15px;
+        margin:auto;
+        background-color: rgb(42, 10, 131);
+        color:whitesmoke;
+        width:max(60px,20%);
+        text-align: center;
+        overflow: auto;
+    }
+    #qa div{
+        padding:15px;
+        margin:auto;
+    }
+    .qa:nth-child(odd){
+        background-color:rgb(42, 10, 131) ;
+        color:white
+    }
+    .qa:nth-child(even){
+      background-color: rgb(211, 208, 8);
+      color:white;
+    }
+    #na{
+        background-color:rgb(42, 10, 131) ;
+        width: 100%;
+        color:whitesmoke;
+    }
+    #up{
+        background-image: url("Screenshot (118).png");
+        color:whitesmoke;
+    }
+    .skill,.role,header{
+        margin:20px;
+    }
+   </style>
+   </head>
+   <header>
+<nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+        <ul class="navbar-nav" id="na">
+            <li class="nav-item">Contact</li>
+            <li class="nav-item">What'sApp</li>
+        </ul>
+    </div>
+</nav>
+<main id="up">
+<div class="container-fluid" style="text-align: center;">
+    <h1>Web development course</h1>
+    <section>We offer high quality full stack web development courses with placement guarantee</section></div>
+    <nav class="navbar navbar-expand-sm">
+   <div class="container-fluid">
+     <section style="display:inline-block"> <ul class="navbar-nav" id="buon">
+        <li class="nav-item"><button type="button" class="btn-primary">Apply</button></li>
+        <li class="nav-item"><button type="button" class="btn-primary">Brochure</button></li>
+        <li class="nav-item"><button type="button" class="btn-primary">Demo</button></li>
+    </ul></section>
+   </div>
+   </nav></main>
+   <div class="container-fluid">
+    <ul class="box" id="qa">
+        <li class="qa"><div class="container-fluid"><h6>Course duration</h6><br><strong>6 months</strong></div></li>
+        <li class="qa"><div class="container-fluid"><h6>Live Projects</h6><br><strong>8+ Projects</strong></div></li>
+        <li class="qa"><div class="container-fluid"><h6>Job Assistance</h6><br><strong>100% Assistance</strong></div></li>
+        <li class="qa"><div class="container-fluid"><h6>Avereage Salary</h6><br><strong>16.2 LPA</strong></div></li>
+    </ul>
+   </div>
+   </header>
+   <footer>
+    <div>
+    <h2 style="color:rgb(42, 10, 131)">Let's<span style="color:rgb(211, 208, 8)"> Connect</span> & <span style="color:rgb(211, 208, 8)">Apply</span> to get a Scholarship</h2></div>
+    <div class="container-fluid">
+    <form>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required><br>
+        <input type="text" placeholder="Phone number"><br>
+        <input type="email" placeholder="E-mail" required><br>
+        <button type="button" id="Submit">Submit</button><br><br>
+        <h3 style="color:rgb(42, 10, 131)">Hurry Up ! Limited Seats available</h3>
+       </form></div>
+     <div class="container-fluid">
+        <h1 class="cen" style="clear:both">Benefits</h1>
+         <ul class="box" id="Benefits">
+            <li><div class="container-fluid"><h5>Versatility</h5>
+            <p>Master thyself in every aspect</p></div></li>
+            <li><div class="container-fluid"><h5>In-Demand Skills</h5>
+            <p>Learn HTML CSS3 JS ReactJS from industry experts</p></div></li>
+            <li><div class="container-fluid"><h5>Project Ready Portfolio</h5>
+            <p>Build real world projects creating a robust portfolio for your employers to see</p></div></li>
+            <li><div class="container-fluid"><h5>Career Advancement</h5>
+            <p>Just learn and grow!</p></div></li>
+         </ul>
+     </div>
+     <div class="container-fluid" style="background-color: rgb(42, 10, 131);">
+        <h3 class="cen" style="color:white">Tools and <p style="color:rgb(211, 208, 8)">Skills</p></h3>
+        <ul class="box">
+            <li class="skill">HTML</li>
+            <li class="skill">CSS</li>
+            <li class="skill">JavaScript</li>
+            <li class="skill">Frameworks</li>
+            <li class="skill">Web design</li>
+            <li class="skill">PHP</li>
+            <li class="skill">Testing and Debugging</li>
+        </ul>
+     </div>
+   </footer>
+   <header>
+    <h2 class="cen">Roles</h2>
+    <ul class="box">
+        <li class="role">FrontEnd Developer</li>
+        <li class="role">Backend Developer</li>
+        <li class="role">FullStack developer</li>
+        <li class="role">Web designer</li>
+        <li class="role">Web analyst</li>
+        <li class="role">Technical Consultant</li>
+    </ul>
+   </header>
+   <footer>
+    <main id="bottom">
+    <div class="container-fluid" style="float:left">
+        <h2>Certification program in</h2><br>
+        <h1><strong>Web development</strong></h1>
+        <section>Fee:</section><section>25+GST</section>
+        <button type="button">Apply now</button>
+        <h5>Certificate from: LOT Academy</h5>
+    </div>
+    <img src="Screenshot (117).png" alt="add image" style="float:right"></main>
+   </footer>
+   <footer>
+    <div class="container-fluid">
+        <h1 class="cen">FAQs</h1>
+        <p class="cen">Look some generally asked questions here.<br>For more assistance contact us at info@acad.com</p>
+        <h3 class="faqhead">General <span style="color:rgb(211, 208, 8)">FAQs</span></h3>
+        <ul class="faq">
+            <li><div class="container-fluid">
+                <section>How long does it take for completion of course?</section>
+                <p>Honestly it depends on you , but we prefer 4 months</p>
+            </div></li>
+            <li><div class="container-fluid">
+                <section>What are the job prospects after course completion?</section>
+              <p>You can check our track record it speaks for itself</p></div></li>
+              <li><div class="container-fluid"><section>Do devs with certifications Earn higher than one without</section>
+            <p>Not really! They just have easier time finding jobs!</p></div></li>
+        </ul>
+        <h3 class="faqhead">Placement<span style="color:rgb(211, 208, 8)"> FAQs</span></h3>
+        <ul class="faq">
+            <li><div class="container-fluid"><section>Do students get practical internships?</section>
+            <p>Yes! They do near the end of the respective course.</p></div></li>
+            <li><div class="container-fluid"><section>What is the salary of entry level devs?</section>
+            <p>Typically it's Rs 20K but companies like Google and amazon do hire toppers with a great package</p></div></li>
+            </ul>
+            <h3 class="faqhead">Course <span style="color:rgb(211, 208, 8)">FAQs</span></h3>
+            <ul class="faq">
+                <li><div class="container-fluid"><section>What is the cost of this course?</section>
+                <p>It's $24.99+GST</p></div></li>
+                <li><div class="container-fluid"><section>What are the prequesites for this course?</section>
+                <p>Knowing to read write speak and type are the only prequesites.</p></div></li>
+                <li><div class="container-fluid"><section>What programming languages are covered in this course?</section>
+                <p>We mainly focus on JavaScript,Python and their Frameworks.</p></div></li></ul>
+    </div>
+   </footer>
+    </body>
+</html>
